@@ -1,0 +1,71 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* TestPage1.cshtml的跑馬燈css */
+div#abgne_marquee {
+	position: relative;
+	overflow: hidden;	/* 超出範圍的部份要隱藏 */
+	width: 375px;
+	height: 25px;
+	border: 1px solid #ccc;
+}
+div#abgne_marquee ul, div#abgne_marquee li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+div#abgne_marquee ul {
+	position: absolute;
+}
+div#abgne_marquee ul li a {
+	display: block;
+	overflow: hidden;	/* 超出範圍的部份要隱藏 */
+	font-size:12px;
+	height: 25px;
+	line-height: 25px;
+	text-decoration: none;
+}
+
+/* TestPage1.cshtml的輪播廣告css */
+body{ font:1em/1 "微軟正黑體", "新細明體", "細明體", "標楷體"; background:url(~/Content/bg.jpg) repeat-x;}
+h1, h2, h3, h4, h5, h6, p, div{ margin:0;}
+.hdr{ background:url(~/Content/logo.png); width:461px; height:94px; margin:10px auto; text-indent:-9999px;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline;}
+.listReset{ padding:0; margin:0; list-style:none;}
+
+.tabPanel{ width:1000px; margin:auto; position:relative; height:500px; overflow:hidden;}
+.tab-content{ width:850px; height:500px; position:absolute; top:0; left:0;}
+.detail{ position:absolute; left:20px; top:0; width:150px; height:190px; background:url(~/Content/detailBG.png); padding:5px;}
+.detail h1 a{ color:#FF0; font-size:.5em;}
+.detail p{ color:#FFF; font-size:.8em; line-height:1.5;}
+.detail ul{ color:#F90; list-style-type:square; padding-left:20px; margin:10px 0 0;}
+.detail ul a{ color:#FC0;  font-size:.8em; line-height:1.5;}
+
+.switch{ width:150px; position:absolute; top:0; right:0px;}
+.switch a{ display:block; line-height:40px; background:url(~/Content/tabBG.jpg); text-indent:1em; color:#666; text-decoration:none; *height:40px;}
+.switch a:hover{ background:#F0F; color:#000; background:url(~/Content/tabBG_over.jpg);}
+
+a.now-tab, a.now-tab:hover{ background:url(~/Content/tabBG_now.png); text-indent:5em; color:#3366ff; font-weight:bold; margin-left:-20px; border:0;}
